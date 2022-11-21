@@ -1,7 +1,7 @@
 
 apply plugin: 'java-library'
 
-group 'com.reandroid.lib.proto'
+group 'com.reandroid.xml'
 version '1.0.0'
 
 java {
@@ -22,7 +22,7 @@ repositories {
 }
 
 processResources {
-    filesMatching('lib.properties') {
+    filesMatching('androidxml.lib.properties') {
         expand('version': version)
     }
 }

@@ -315,6 +315,14 @@ public class XMLElement {
             addChild(baseElement);
         }
     }
+    public void addChild(Collection<XMLElement> elements) {
+        if(elements==null){
+            return;
+        }
+        for(XMLElement element:elements){
+            addChild(element);
+        }
+    }
     public void addChild(XMLElement baseElement) {
         addChildNoCheck(baseElement);
     }
